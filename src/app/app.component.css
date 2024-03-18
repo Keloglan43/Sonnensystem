@@ -1,0 +1,55 @@
+/* Application-wide Styles */
+nav {
+  /* background-color: #ffeda0; */
+  padding: 5px 20px 5px 20px;
+}
+nav :any-link{
+  display:inline-flex;
+  list-style-type:armenian;
+} 
+h1 {
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+    text-align: left;
+    padding: 2rem;
+  }
+h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+body {
+    margin: 2em;
+    background-color: #369;
+  }
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+  }
+  button {
+    background-color: #eee;
+    border:1px solid #9b9494;
+    border-radius: 15px;
+    cursor:pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }

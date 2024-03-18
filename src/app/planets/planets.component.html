@@ -1,0 +1,30 @@
+<h2>Die Planeten</h2>
+<ul class="planets">
+    <li *ngFor="let planet of planets">
+
+        <!-- <button [class.selected]="planet ===  selectedPlanet" type="button" (click)="onSelect(planet)">
+            <span class="badge">{{planet.id}}</span>
+            <span class="name">{{planet.title}}</span>
+        </button> 
+        ## Die buttons werden durch die Links ersetzt-->
+        
+        <button routerLink="/detail/{{planet.id}}">
+            <span class="badge">{{planet.id}}</span> {{planet.title}}
+        </button>
+    </li>
+</ul>
+
+
+<!-- <div *ngIf="selectedPlanet">
+    <h2>{{selectedPlanet.title | uppercase}} Details</h2>
+    <div>Titel: {{selectedPlanet.id}}</div>
+    <div>
+        <label for="planet-title">Planenten Name: </label>
+        <input id="planet-title" [(ngModel)]="selectedPlanet.title" placeholder="Planetenname">
+
+    </div>
+</div> -->
+
+
+
+

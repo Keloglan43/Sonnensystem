@@ -1,0 +1,21 @@
+<div *ngIf="planet">
+    <h2>{{planet.title | uppercase}} Details</h2>
+    <div>
+        <div>
+            
+            <div class="div-detail-text"> ID: {{planet.id}}</div>
+            <div class="div-detail-text">  Masse: {{planet.Masse}}</div>
+            <div class="div-detail-text">  Durchmesser: {{planet.Durchmesser}} km</div>
+            <div class="div-detail-text"> Abstand zur Sonne: {{planet.Abstand_zur_Sonne}} km</div>
+            
+        </div>
+        <img class="rotate" src="{{planet.img}}">
+    </div>
+    <hr>
+    <div>
+        <label for="planet-title">Planenten Name: </label>
+        <input id="planet-title" [(ngModel)]="planet.title" placeholder="Planeten Name">
+        
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+</div>

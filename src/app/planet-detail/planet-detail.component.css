@@ -1,0 +1,87 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    color: #eee;
+    font-weight: bold;
+  }
+  input {
+    font-size: 1em;
+    padding: .5rem;
+    
+  }
+  button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color:black;
+    border-radius: 30px;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+    
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  div {
+    background-color: black;
+  
+  }
+img {
+  height: 350px;
+
+}
+img.rotate:hover{
+  rotate: 15deg;
+  animation: drehen 10s ease-out infinite;
+  
+}
+  @keyframes drehen {
+    from {
+      rotate: 3deg;
+    }
+    to {
+      rotate: 180deg;
+    }
+  }
+
+.div-detail-text {
+  padding: 0rem 2rem;
+  display:block;
+  justify-content: space-around;
+  color: aqua;
+  animation: glow 2s ease-out infinite;
+  
+}
+  @keyframes glow {
+    from {
+      color: rgb(255, 255, 255);
+    }
+    to {
+      color: rgb(0,255,255);
+    }
+  }
+
+div > img{
+  float: right;
+  position: relative;
+  top: -200px;
+}
+hr  {
+  min-height: 350px;
+  border: none;
+}
+h2  {
+  height: 120px;
+  padding: 1rem;
+}
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    font-size: 20px;
+    
+  
+  }
